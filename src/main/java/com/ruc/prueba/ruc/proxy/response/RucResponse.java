@@ -1,9 +1,12 @@
 package com.ruc.prueba.ruc.proxy.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class RucResponse {
     private String ruc;
     
+    @JsonProperty("rozon_social")
     private String razonSocial;
     
     private String ubigeo;

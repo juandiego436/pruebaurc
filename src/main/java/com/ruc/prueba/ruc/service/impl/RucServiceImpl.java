@@ -28,7 +28,7 @@ public class RucServiceImpl implements RucService {
         Ruc rucEntity =  new Ruc();
         try {
             rucResponse = proxy.consultaRuc(ruc, tipo);
-            if (rucResponse != null) {
+            if (rucResponse.getRuc() != null) {
                 rucEntity.setRuc(rucResponse.getRuc());
                 rucEntity.setRazonSocial(rucResponse.getRazonSocial());
                 rucEntity.setDireccion(rucResponse.getDireccion());
