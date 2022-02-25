@@ -20,7 +20,7 @@ public class Ruc {
     @Column(name = "ruc", length = 20)
     private String ruc;
     
-    @Column(name = "razon_social", length = 20)
+    @Column(name = "razon_social", length = 200)
     private String razonSocial;
     
     @Column(name = "ubigeo", length = 20)
